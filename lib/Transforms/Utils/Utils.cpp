@@ -37,6 +37,7 @@ void llvm::initializeTransformUtils(PassRegistry &Registry) {
   initializeMetaRenamerPass(Registry);
   initializeStripGCRelocatesPass(Registry);
   initializePredicateInfoPrinterLegacyPassPass(Registry);
+  initializeHelloPass(Registry);
 }
 
 /// LLVMInitializeTransformUtils - C binding for initializeTransformUtilsPasses.

@@ -53,6 +53,7 @@ add_llvm_library(LLVMTransformUtils
   Utils.cpp
   ValueMapper.cpp
   VNCoercion.cpp
+  Hello.cpp
 
   ADDITIONAL_HEADER_DIRS
   ${LLVM_MAIN_INCLUDE_DIR}/llvm/Transforms

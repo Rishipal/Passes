@@ -68,6 +68,8 @@
 #include "llvm/Transforms/Utils/BasicBlockUtils.h"
 #include "llvm/Transforms/Utils/Local.h"
 #include "llvm/Transforms/Utils/LoopUtils.h"
+//#include "Hello.h"
+
 using namespace llvm;
 
 #define DEBUG_TYPE "loop-simplify"
@@ -728,7 +730,7 @@ namespace {
 
     void getAnalysisUsage(AnalysisUsage &AU) const override {
       AU.addRequired<AssumptionCacheTracker>();
-
+      //AU.addRequired<Hello>();
       // We need loop information to identify the loops...
       AU.addRequired<DominatorTreeWrapperPass>();
       AU.addPreserved<DominatorTreeWrapperPass>();
